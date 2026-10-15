@@ -1,0 +1,10 @@
+{
+  "n_rules": 12,
+  "n_passed": 11,
+  "n_failed": 1,
+  "n_error_failed": 0,
+  "n_warn_failed": 1,
+  "quality_score": 91.67,
+  "gate": "WARN",
+  "loaded_from": "data/processed/*.parquet"
+}

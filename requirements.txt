@@ -1,0 +1,24 @@
+# 京东用户消费数据分析 — 依赖清单
+# 安装：pip install -r requirements.txt
+
+# ---- 核心数据处理 ----
+pandas>=2.0
+numpy>=1.24
+pyarrow>=14.0          # Parquet 读写（清洗结果落盘）
+
+# ---- 统计检验 ----
+scipy>=1.10            # Welch t 检验 / Mann-Whitney U / Levene / 卡方
+
+# ---- 可视化 ----
+matplotlib>=3.7        # 静态图表（漏斗、趋势、热力图、箱线图）
+
+# ---- 交互看板 ----
+streamlit>=1.30        # 评估看板
+altair>=5.0            # 看板内交互图表（Streamlit 依赖）
+
+# ---- 报告产出 ----
+tabulate>=0.9          # DataFrame -> Markdown 表格（SQL 报告用）
+
+# 说明：
+#   sqlite3 为 Python 标准库，无需安装
+#   scikit-learn / statsmodels 本阶段未使用，如需扩展建模可自行添加

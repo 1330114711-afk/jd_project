@@ -1,0 +1,141 @@
+{
+  "finished_at": "2026-10-15 16:03:53",
+  "total_seconds": 514.3,
+  "aborted_at": null,
+  "stages": [
+    {
+      "stage": "S1",
+      "name": "数据体检",
+      "status": "ok",
+      "seconds": 87.1,
+      "returncode": 0,
+      "log": "S1_01_data_health_check.log"
+    },
+    {
+      "stage": "S2",
+      "name": "清洗标准化",
+      "status": "ok",
+      "seconds": 172.3,
+      "returncode": 0,
+      "log": "S2_02_cleaning.log"
+    },
+    {
+      "stage": "S3",
+      "name": "指标与分组聚合",
+      "status": "ok",
+      "seconds": 221.7,
+      "returncode": 0,
+      "log": "S3_03_metrics_aggregation.log"
+    },
+    {
+      "stage": "S4",
+      "name": "时间序列与统计",
+      "status": "ok",
+      "seconds": 5.3,
+      "returncode": 0,
+      "log": "S4_04_timeseries_stats.log"
+    },
+    {
+      "stage": "S5",
+      "name": "统计检验",
+      "status": "ok",
+      "seconds": 9.6,
+      "returncode": 0,
+      "log": "S5_05_stat_tests.log"
+    },
+    {
+      "stage": "S6",
+      "name": "可视化",
+      "status": "ok",
+      "seconds": 4.6,
+      "returncode": 0,
+      "log": "S6_06_visualize.log"
+    },
+    {
+      "stage": "S7",
+      "name": "质量门禁",
+      "status": "ok",
+      "seconds": 10.7,
+      "returncode": 0,
+      "log": "S7_09_quality_report.log"
+    },
+    {
+      "stage": "S8",
+      "name": "入库 SQLite",
+      "status": "ok",
+      "seconds": 1.6,
+      "returncode": 0,
+      "log": "S8_07_sqlite_load.log"
+    },
+    {
+      "stage": "S9",
+      "name": "SQL 分析查询",
+      "status": "ok",
+      "seconds": 1.4,
+      "returncode": 0,
+      "log": "S9_08_sql_queries.log"
+    }
+  ],
+  "outputs_check": [
+    {
+      "检查项": "清洗数据",
+      "路径": "data/processed/action_clean.parquet",
+      "存在": true,
+      "大小": "835.69 MB"
+    },
+    {
+      "检查项": "聚合结果",
+      "路径": "outputs/tables/agg_overall.csv",
+      "存在": true,
+      "大小": "0.7 KB"
+    },
+    {
+      "检查项": "漏斗结果",
+      "路径": "outputs/tables/agg_funnel_overall.csv",
+      "存在": true,
+      "大小": "0.3 KB"
+    },
+    {
+      "检查项": "趋势结果",
+      "路径": "outputs/tables/ts_daily_trend.csv",
+      "存在": true,
+      "大小": "10.3 KB"
+    },
+    {
+      "检查项": "异常样本",
+      "路径": "outputs/tables/anomaly_samples.csv",
+      "存在": true,
+      "大小": "2.4 KB"
+    },
+    {
+      "检查项": "统计检验",
+      "路径": "outputs/tables/stat_tests.csv",
+      "存在": true,
+      "大小": "1.7 KB"
+    },
+    {
+      "检查项": "质量规则",
+      "路径": "outputs/tables/quality_rules.csv",
+      "存在": true,
+      "大小": "1.2 KB"
+    },
+    {
+      "检查项": "SQLite",
+      "路径": "outputs/results.db",
+      "存在": true,
+      "大小": "0.22 MB"
+    },
+    {
+      "检查项": "SQL 报告",
+      "路径": "outputs/sql_report.md",
+      "存在": true,
+      "大小": "17.7 KB"
+    },
+    {
+      "检查项": "图表目录",
+      "路径": "outputs/figures",
+      "存在": true,
+      "大小": "8 张图"
+    }
+  ]
+}

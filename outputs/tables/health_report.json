@@ -1,0 +1,580 @@
+{
+  "tables": {
+    "user": {
+      "file": "jdata_user.csv",
+      "size_bytes": 39206178,
+      "n_rows": 1048575,
+      "n_cols": 9,
+      "columns": [
+        "user_id",
+        "age",
+        "sex",
+        "user_reg_tm",
+        "user_lv_cd",
+        "city_level",
+        "province",
+        "city",
+        "county"
+      ],
+      "dtypes": {
+        "user_id": "int64",
+        "age": "float64",
+        "sex": "float64",
+        "user_reg_tm": "str",
+        "user_lv_cd": "int64",
+        "city_level": "float64",
+        "province": "float64",
+        "city": "float64",
+        "county": "float64"
+      },
+      "missing": {
+        "user_id": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0,
+          "missing_rate": 0.0
+        },
+        "age": {
+          "null_n": 1661,
+          "blank_n": 0,
+          "missing_n": 1661,
+          "missing_rate": 0.0016
+        },
+        "sex": {
+          "null_n": 671,
+          "blank_n": 0,
+          "missing_n": 671,
+          "missing_rate": 0.0006
+        },
+        "user_reg_tm": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0,
+          "missing_rate": 0.0
+        },
+        "user_lv_cd": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0,
+          "missing_rate": 0.0
+        },
+        "city_level": {
+          "null_n": 1061,
+          "blank_n": 0,
+          "missing_n": 1061,
+          "missing_rate": 0.001
+        },
+        "province": {
+          "null_n": 1039,
+          "blank_n": 0,
+          "missing_n": 1039,
+          "missing_rate": 0.001
+        },
+        "city": {
+          "null_n": 1039,
+          "blank_n": 0,
+          "missing_n": 1039,
+          "missing_rate": 0.001
+        },
+        "county": {
+          "null_n": 1039,
+          "blank_n": 0,
+          "missing_n": 1039,
+          "missing_rate": 0.001
+        }
+      }
+    },
+    "product": {
+      "file": "jdata_product.csv",
+      "size_bytes": 10714103,
+      "n_rows": 352539,
+      "n_cols": 5,
+      "columns": [
+        "sku_id",
+        "brand",
+        "shop_id",
+        "cate",
+        "market_time"
+      ],
+      "dtypes": {
+        "sku_id": "int64",
+        "brand": "int64",
+        "shop_id": "int64",
+        "cate": "int64",
+        "market_time": "str"
+      },
+      "missing": {
+        "sku_id": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0,
+          "missing_rate": 0.0
+        },
+        "brand": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0,
+          "missing_rate": 0.0
+        },
+        "shop_id": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0,
+          "missing_rate": 0.0
+        },
+        "cate": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0,
+          "missing_rate": 0.0
+        },
+        "market_time": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0,
+          "missing_rate": 0.0
+        }
+      }
+    },
+    "shop": {
+      "file": "jdata_shop.csv",
+      "size_bytes": 417015,
+      "n_rows": 10399,
+      "n_cols": 7,
+      "columns": [
+        "vender_id",
+        "shop_id",
+        "fans_num",
+        "vip_num",
+        "shop_reg_tm",
+        "cate",
+        "shop_score"
+      ],
+      "dtypes": {
+        "vender_id": "int64",
+        "shop_id": "int64",
+        "fans_num": "int64",
+        "vip_num": "int64",
+        "shop_reg_tm": "str",
+        "cate": "float64",
+        "shop_score": "float64"
+      },
+      "missing": {
+        "vender_id": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0,
+          "missing_rate": 0.0
+        },
+        "shop_id": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0,
+          "missing_rate": 0.0
+        },
+        "fans_num": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0,
+          "missing_rate": 0.0
+        },
+        "vip_num": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0,
+          "missing_rate": 0.0
+        },
+        "shop_reg_tm": {
+          "null_n": 645,
+          "blank_n": 0,
+          "missing_n": 645,
+          "missing_rate": 0.062
+        },
+        "cate": {
+          "null_n": 2190,
+          "blank_n": 0,
+          "missing_n": 2190,
+          "missing_rate": 0.2106
+        },
+        "shop_score": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0,
+          "missing_rate": 0.0
+        }
+      }
+    },
+    "comment": {
+      "file": "jdata_comment.csv",
+      "size_bytes": 42420709,
+      "n_rows": 1774233,
+      "n_cols": 5,
+      "columns": [
+        "dt",
+        "sku_id",
+        "comments",
+        "good_comments",
+        "bad_comments"
+      ],
+      "dtypes": {
+        "dt": "str",
+        "sku_id": "int64",
+        "comments": "int64",
+        "good_comments": "int64",
+        "bad_comments": "int64"
+      },
+      "missing": {
+        "dt": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0,
+          "missing_rate": 0.0
+        },
+        "sku_id": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0,
+          "missing_rate": 0.0
+        },
+        "comments": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0,
+          "missing_rate": 0.0
+        },
+        "good_comments": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0,
+          "missing_rate": 0.0
+        },
+        "bad_comments": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0,
+          "missing_rate": 0.0
+        }
+      }
+    },
+    "action": {
+      "file": "jdata_action.csv",
+      "size_bytes": 1646181961,
+      "columns": [],
+      "n_rows": 37214269,
+      "n_cols": 0,
+      "n_unique_user_id": 1608707,
+      "n_unique_sku_id": 378457,
+      "time_min": "2018-02-01 00:00:00",
+      "time_max": "2018-04-15 23:59:59",
+      "time_unparsable_n": 4403187,
+      "missing": {
+        "user_id": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0
+        },
+        "sku_id": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0
+        },
+        "type": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0
+        },
+        "module_id": {
+          "null_n": 0,
+          "blank_n": 0,
+          "missing_n": 0
+        }
+      },
+      "type_distribution": {
+        "1": 33151074,
+        "2": 2193489,
+        "4": 826761,
+        "5": 600979,
+        "3": 441966
+      },
+      "n_unique_module_id": 11363613,
+      "module_id_top_15": {
+        "10439703": 1869706,
+        "7803094": 1069,
+        "355392": 948,
+        "8220611": 945,
+        "10880262": 884,
+        "10670069": 874,
+        "4099416": 854,
+        "1157763": 840,
+        "659396": 837,
+        "9612866": 753,
+        "7234288": 748,
+        "9401782": 728,
+        "3544952": 716,
+        "5335532": 685,
+        "188104": 678
+      }
+    }
+  },
+  "notes": [],
+  "primary_key": {
+    "user.user_id": {
+      "n_rows": 1048575,
+      "n_unique": 1048575,
+      "dup_rows": 0
+    },
+    "product.sku_id": {
+      "n_rows": 352539,
+      "n_unique": 352539,
+      "dup_rows": 0
+    },
+    "shop.shop_id": {
+      "n_rows": 10399,
+      "n_unique": 10399,
+      "dup_rows": 0
+    },
+    "comment.(dt, sku_id)": {
+      "n_rows": 1774233,
+      "n_unique": 1774233,
+      "dup_rows": 0
+    }
+  },
+  "value_counts": {
+    "user.user_lv_cd": {
+      "1": 316572,
+      "6": 287564,
+      "5": 228463,
+      "7": 205604,
+      "3": 6141,
+      "4": 4223,
+      "2": 8
+    },
+    "user.sex": {
+      "0.0": 580559,
+      "1.0": 459645,
+      "-1.0": 7700,
+      "nan": 671
+    },
+    "user.age": {
+      "5.0": 469641,
+      "6.0": 286273,
+      "4.0": 135941,
+      "2.0": 78231,
+      "1.0": 76792,
+      "nan": 1661,
+      "3.0": 36
+    },
+    "user.city_level": {
+      "4.0": 310454,
+      "3.0": 254388,
+      "5.0": 243194,
+      "1.0": 219894,
+      "2.0": 15934,
+      "6.0": 3650,
+      "nan": 1061
+    },
+    "user.province_top": {
+      "20.0": 177362,
+      "11.0": 127905,
+      "6.0": 80159,
+      "7.0": 64256,
+      "26.0": 58644,
+      "23.0": 58252,
+      "30.0": 45985,
+      "25.0": 40131,
+      "19.0": 37403,
+      "29.0": 35605,
+      "8.0": 31678,
+      "22.0": 28259,
+      "17.0": 26176,
+      "21.0": 26141,
+      "1.0": 25995
+    },
+    "product.cate": {
+      "7": 72420,
+      "24": 24517,
+      "81": 23273,
+      "75": 15876,
+      "56": 13265,
+      "69": 12153,
+      "70": 11703,
+      "27": 9720,
+      "10": 9185,
+      "77": 8114,
+      "34": 7509,
+      "62": 7507,
+      "73": 7137,
+      "23": 6161,
+      "43": 5627,
+      "12": 5621,
+      "3": 5144,
+      "72": 5114,
+      "67": 4930,
+      "20": 4563
+    },
+    "shop.cate": {
+      "nan": 2190,
+      "81.0": 1708,
+      "49.0": 1381,
+      "12.0": 906,
+      "47.0": 890,
+      "67.0": 545,
+      "35.0": 368,
+      "26.0": 327,
+      "66.0": 242,
+      "28.0": 201,
+      "6.0": 164,
+      "77.0": 153,
+      "5.0": 120,
+      "86.0": 118,
+      "75.0": 117,
+      "53.0": 92,
+      "37.0": 75,
+      "21.0": 73,
+      "85.0": 58,
+      "82.0": 57
+    },
+    "shop.shop_score": {
+      "-1.0": 1767,
+      "0.0": 679,
+      "10.0": 56,
+      "9.55": 8,
+      "9.97059": 7,
+      "9.520271": 2,
+      "9.488741": 2,
+      "9.756159": 2,
+      "9.733905": 2,
+      "9.157478": 2,
+      "9.652501": 2,
+      "9.304747": 2,
+      "9.797839": 2,
+      "9.172677": 2,
+      "9.317742": 2,
+      "9.494712": 2,
+      "9.287122": 2,
+      "9.723079": 2,
+      "9.737351": 2,
+      "9.407909": 2
+    }
+  },
+  "anomaly": {
+    "comment.comments": {
+      "min": 1,
+      "max": 1541,
+      "n_neg": 0,
+      "n_null": 0
+    },
+    "comment.good_comments": {
+      "min": 0,
+      "max": 1541,
+      "n_neg": 0,
+      "n_null": 0
+    },
+    "comment.bad_comments": {
+      "min": 0,
+      "max": 416,
+      "n_neg": 0,
+      "n_null": 0
+    },
+    "comment.good_gt_all": {
+      "n": 0
+    },
+    "comment.bad_gt_all": {
+      "n": 0
+    },
+    "shop.fans_num": {
+      "min": "0",
+      "max": "9293487",
+      "n_neg": 0,
+      "n_null": 0
+    },
+    "shop.vip_num": {
+      "min": "0",
+      "max": "13841676",
+      "n_neg": 0,
+      "n_null": 0
+    },
+    "product.market_time": {
+      "min": "2006-07-25 00:00:00",
+      "max": "2018-04-15 00:00:00",
+      "unparsable_n": 0
+    },
+    "user.user_reg_tm": {
+      "min": "2003-06-13 00:00:00",
+      "max": "2018-04-15 00:00:00",
+      "unparsable_n": 0
+    }
+  },
+  "cross_table": {
+    "action.user_id -> user.user_id": {
+      "left": "action.user_id",
+      "right": "user.user_id",
+      "left_n": 1608707,
+      "matched_n": 1048575,
+      "unmatched_n": 560132,
+      "unmatched_rate": 0.348188
+    },
+    "action.sku_id -> product.sku_id": {
+      "left": "action.sku_id",
+      "right": "product.sku_id",
+      "left_n": 378457,
+      "matched_n": 352539,
+      "unmatched_n": 25918,
+      "unmatched_rate": 0.068483
+    },
+    "product.shop_id -> shop.shop_id": {
+      "left": "product.shop_id",
+      "right": "shop.shop_id",
+      "left_n": 10296,
+      "matched_n": 10296,
+      "unmatched_n": 0,
+      "unmatched_rate": 0.0
+    },
+    "comment.sku_id -> product.sku_id": {
+      "left": "comment.sku_id",
+      "right": "product.sku_id",
+      "left_n": 160137,
+      "matched_n": 154224,
+      "unmatched_n": 5913,
+      "unmatched_rate": 0.036925
+    }
+  },
+  "time_span": {
+    "user.user_reg_tm": {
+      "column": "user_reg_tm",
+      "min": "2003-06-13 00:00:00",
+      "max": "2018-04-15 00:00:00",
+      "unparsable_n": 0
+    },
+    "action.action_time": {
+      "min": "2018-02-01 00:00:00",
+      "max": "2018-04-15 23:59:59"
+    },
+    "comment.dt": {
+      "column": "dt",
+      "min": "2018-02-01 00:00:00",
+      "max": "2018-04-15 00:00:00",
+      "unparsable_n": 0
+    },
+    "product.market_time": {
+      "column": "market_time",
+      "min": "2006-07-25 00:00:00",
+      "max": "2018-04-15 00:00:00",
+      "unparsable_n": 0
+    },
+    "shop.shop_reg_tm": {
+      "column": "shop_reg_tm",
+      "min": "2010-12-16 00:00:00",
+      "max": "2018-04-13 00:00:00",
+      "unparsable_n": 645
+    }
+  },
+  "user_missing_pattern": {
+    "n_all_null_attr": 0,
+    "n_age_null": 1661,
+    "n_sex_null": 671,
+    "n_lv_null": 0,
+    "n_city_level_null": 1061,
+    "n_province_null": 1039
+  }
+}

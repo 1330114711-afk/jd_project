@@ -1,0 +1,32 @@
+============================================================
+京东数据清洗与标准化
+============================================================
+  [清洗] user
+  -> 1,048,575 行，sex 占位修正 7,700 条
+  [清洗] product
+  -> 352,539 行
+  [清洗] shop
+  -> 10,399 行，评分占位修正 2,446 条
+  [清洗] comment
+  -> 1,774,233 行，勾稽违规 0 条
+  [清洗] action (分块)
+    已处理 10,000,000 行 ...
+    已处理 20,000,000 行 ...
+    已处理 30,000,000 行 ...
+  合并 38 个分片 -> action_clean.parquet
+  -> 37,210,678 行（原始 37,214,269，去重删除 3,591）
+[写出] 维度表 -> data/processed/
+  user_clean.parquet  (1,048,575 行)
+  product_clean.parquet  (352,539 行)
+  shop_clean.parquet  (10,399 行)
+  comment_clean.parquet  (1,774,233 行)
+
+===== 清洗完成 =====
+  user        1,048,575 ->    1,048,575
+  product       352,539 ->      352,539
+  shop           10,399 ->       10,399
+  comment     1,774,233 ->    1,774,233
+  action     37,214,269 ->   37,210,678
+
+产出：D:\AI_Research_Project\data_projects\jd_project\data\processed
+日志：D:\AI_Research_Project\data_projects\jd_project\outputs\tables\cleaning_log.csv

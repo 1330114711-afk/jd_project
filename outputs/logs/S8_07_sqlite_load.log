@@ -1,0 +1,37 @@
+============================================================
+评估结果入库 SQLite
+============================================================
+[提示] 已存在 results.db，将覆盖同名表
+  [入库] agg_overall                     28 行 × 2 列
+  [入库] agg_funnel_overall               3 行 × 10 列
+  [入库] agg_funnel_by_type               5 行 × 6 列
+  [入库] agg_funnel_by_day               74 行 × 7 列
+  [入库] funnel_containment_check         4 行 × 3 列
+  [入库] agg_user_funnel_by_level         7 行 × 8 列
+  [入库] agg_user_funnel_by_sex           2 行 × 8 列
+  [入库] agg_user_funnel_by_age           6 行 × 8 列
+  [入库] agg_user_funnel_by_city          6 行 × 8 列
+  [入库] agg_user_activity                9 行 × 7 列
+  [入库] agg_cate                        81 行 × 10 列
+  [入库] agg_brand_top50                 50 行 × 7 列
+  [入库] agg_shop_top100                100 行 × 12 列
+  [入库] agg_time_daily                  74 行 × 10 列
+  [入库] agg_time_hourly                 24 行 × 8 列
+  [入库] agg_time_weekday                 7 行 × 9 列
+  [入库] agg_cate_userlevel             345 行 × 3 列
+  [跳过] agg_cate_city.csv 不存在
+  [入库] ts_daily_trend                  74 行 × 16 列
+  [入库] ts_weekly                       11 行 × 9 列
+  [入库] ts_period                        7 行 × 8 列
+  [入库] stats_summary                    6 行 × 22 列
+  [入库] anomaly_by_method                3 行 × 7 列
+  [入库] anomaly_samples                 23 行 × 13 列
+  [入库] stat_tests                       7 行 × 23 列
+  [入库] stat_group_desc                 21 行 × 5 列
+  [入库] quality_rules                   12 行 × 7 列
+  [入库] quality_issues                   1 行 × 6 列
+
+===== 入库完成 =====
+  数据库：D:\AI_Research_Project\data_projects\jd_project\outputs\results.db
+  表数：29
+  表清单：_meta, agg_brand_top50, agg_cate, agg_cate_city, agg_cate_userlevel, agg_funnel_by_day, agg_funnel_by_type, agg_funnel_overall, agg_overall, agg_shop_top100, agg_time_daily, agg_time_hourly, agg_time_weekday, agg_user_activity, agg_user_funnel_by_age, agg_user_funnel_by_city, agg_user_funnel_by_level, agg_user_funnel_by_sex, anomaly_by_method, anomaly_samples, funnel_containment_check, quality_issues, quality_rules, stat_group_desc, stat_tests, stats_summary, ts_daily_trend, ts_period, ts_weekly

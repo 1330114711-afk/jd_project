@@ -1,0 +1,24 @@
+  [读取]jdata_user.csv
+ [体检] user: 1,048,575 行 × 9 列
+  [读取]jdata_product.csv
+ [体检] product: 352,539 行 × 5 列
+  [读取]jdata_shop.csv
+ [体检] shop: 10,399 行 × 7 列
+  [读取]jdata_comment.csv
+ [体检] comment: 1,774,233 行 × 5 列
+  [行为表] 分块扫描行数与分布 （1.53 G）
+  已扫描 10,000,000 行
+  已扫描 20,000,000 行
+  已扫描 30,000,000 行
+  [输出] D:\AI_Research_Project\data_projects\jd_project\outputs\tables\health_report.json
+  [输出] D:\AI_Research_Project\data_projects\jd_project\outputs\tables\health_summary.csv
+
+===== 体检完成 =====
+  主键 user.user_id: 重复 0 行
+  主键 product.sku_id: 重复 0 行
+  主键 shop.shop_id: 重复 0 行
+  主键 comment.(dt, sku_id): 重复 0 行
+  关联 action.user_id -> user.user_id: 未匹配 560,132 (0.348188)
+  关联 action.sku_id -> product.sku_id: 未匹配 25,918 (0.068483)
+  关联 product.shop_id -> shop.shop_id: 未匹配 0 (0.0)
+  关联 comment.sku_id -> product.sku_id: 未匹配 5,913 (0.036925)

@@ -1,0 +1,27 @@
+metric,name_cn,formula,depends_on,granularity,口径置信度
+uv,活跃用户数,去重 user_id 计数,action.user_id,整体/分组,可用
+pv,行为量,行为记录条数,action,整体/分组,可用
+funnel_uv_{stage},漏斗各环节用户数,该 type 下去重 user_id 数,action.type,漏斗,依赖 type 口径
+conv_rate_{a}_{b},环节转化率,阶段b用户数 / 阶段a用户数,action.type,漏斗,依赖 type 口径
+churn_rate_{a}_{b},环节流失率,1 - 转化率,action.type,漏斗,依赖 type 口径
+overall_conv_rate,整体转化率,下单用户数 / 浏览用户数,action.type,漏斗,依赖 type 口径
+order_cnt,下单行为数,type=下单 的记录数,action.type,整体/分组,依赖 type 口径
+browse_per_user,人均浏览,浏览行为数 / 浏览用户数,action.type,分组,依赖 type 口径
+act_per_user,人均行为,行为量 / 活跃用户数,action,分组,可用
+cart_rate,加购率,加购用户数 / 浏览用户数,action.type,漏斗,依赖 type 口径
+u2o_conv,加购到下单转化率,下单用户数 / 加购用户数,action.type,漏斗,依赖 type 口径
+sku_cnt,商品数,去重 sku_id 数,product,品类/品牌,可用
+brand_cnt,品牌数,去重 brand 数,product,品类,可用
+shop_cnt,店铺数,去重 shop_id 数,product/shop,品类,可用
+fans_num_sum,粉丝数合计,fans_num 求和,shop,店铺,可用
+vip_num_sum,会员数合计,vip_num 求和,shop,店铺,可用
+vip_conv_rate,粉丝转会员率,vip_num / fans_num,shop,店铺,可用
+shop_score_avg,店铺评分均值,"有效评分(剔除-1,0)均值",shop.shop_score,店铺,可用
+good_rate,好评率,good_comments / comments,comment,整体/商品,可用
+bad_rate,差评率,bad_comments / comments,comment,整体/商品,可用
+dau,日活跃用户,按日去重 user_id 数,action.dt,时间,可用
+order_daily,日下单量,按日 type=下单 记录数,action.dt,时间,可用
+hour_share,时段行为占比,该小时行为量 / 日行为总量,action.hour,时间,可用
+weekend_ratio,周末行为占比,周末行为量 / 总行为量,action.is_weekend,时间,可用
+repurchase_rate,复购率,下单行为>1次的用户 / 下单用户数,action.type,用户,依赖 type 口径
+user_act_decile,用户活跃分位,按行为次数分 10 档,action,用户,可用

@@ -1,0 +1,6 @@
+﻿table,file,n_rows,n_cols,size_mb
+user,jdata_user.csv,1048575,9,37.4
+product,jdata_product.csv,352539,5,10.2
+shop,jdata_shop.csv,10399,7,0.4
+comment,jdata_comment.csv,1774233,5,40.5
+action,jdata_action.csv,37214269,0,1569.9

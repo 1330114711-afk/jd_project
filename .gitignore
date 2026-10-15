@@ -1,0 +1,14 @@
+# 数据库、输出文件
+outputs/*.db
+outputs/*.log
+# 大原始数据
+data/raw/*
+data/processed/*.parquet
+# python缓存
+__pycache__/
+*.pyc
+.venv/
+# 截图
+docs/screenshots/
+# ipynb
+*.ipynb

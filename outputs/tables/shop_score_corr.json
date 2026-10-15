@@ -1,0 +1,10 @@
+{
+  "n_valid_shop_score": 7871,
+  "corr_with_shop_score": {
+    "fans_num": 0.028,
+    "vip_num": -0.0245,
+    "行为量": -0.0112,
+    "下单行为数": 0.0333,
+    "SKU数": -0.1383
+  }
+}

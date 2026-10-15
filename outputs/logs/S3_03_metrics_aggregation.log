@@ -1,0 +1,39 @@
+============================================================
+京东数据 · 指标与分组聚合
+============================================================
+[加载] data/processed/*.parquet
+  user        1,048,575
+  comment     1,774,233
+  action     37,210,678
+  shop           10,399
+  product       352,539
+  [输出] metrics_dictionary.csv (26 行)
+[聚合] 总体指标
+  [输出] agg_overall.csv (28 行)
+[聚合] 漏斗
+  [输出] agg_funnel_overall.csv (3 行)
+    [漏斗] 严格口径 浏览 1,328,942 → 加购 1,328,942 → 下单 391,673；整体转化 29.47%
+  [输出] funnel_containment_check.csv (4 行)
+  [输出] agg_funnel_by_type.csv (5 行)
+  [输出] agg_funnel_by_day.csv (74 行)
+[聚合] 用户维度
+  [漏斗] 行为表关联画像后 37,210,678 行
+  [输出] agg_user_funnel_by_level.csv (7 行)
+  [输出] agg_user_funnel_by_sex.csv (2 行)
+  [输出] agg_user_funnel_by_age.csv (6 行)
+  [输出] agg_user_funnel_by_city.csv (6 行)
+  [输出] agg_user_activity.csv (9 行)
+[聚合] 商品/店铺
+  [输出] agg_cate.csv (81 行)
+  [输出] agg_brand_top50.csv (50 行)
+  [输出] agg_shop_top100.csv (100 行)
+[聚合] 时间维度
+  [输出] agg_time_daily.csv (74 行)
+  [输出] agg_time_hourly.csv (24 行)
+  [输出] agg_time_weekday.csv (7 行)
+[聚合] 交叉矩阵
+  [输出] agg_cate_userlevel.csv (345 行)
+  [输出] agg_cate_citylevel.csv (467 行)
+
+===== 聚合完成 =====
+产出目录：D:\AI_Research_Project\data_projects\jd_project\outputs\tables

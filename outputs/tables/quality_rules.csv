@@ -1,0 +1,13 @@
+﻿规则,检查项,级别,对象,通过,问题数,说明
+R01,主键唯一,error,user/product/shop/comment,True,0,"重复行合计 0（{'user': 0, 'product': 0, 'shop': 0, 'comment': 0}）"
+R02,关键字段非空,error,action,True,0,空值行 0
+R03,行为类型域合法,error,action.type,True,0,"越界 0（合法域 [1, 2, 3, 4, 5]）"
+R04,时间域合法,error,action.action_dt,True,0,越界 0（域 2018-02-01~2018-04-15 全天）
+R05,时间解析无失败,error,action.action_dt,True,0,解析失败 0
+R06,评论勾稽 good+bad<=comments,error,comment,True,0,违规 0
+R07,"店铺评分域 [0,10]",warn,shop.shop_score,True,0,越界 0，无效占位已转空 2446 条
+R08,粉丝/会员非负,warn,shop.fans_num/vip_num,True,0,负值 0
+R09,漏斗包含 浏览 ⊆ 加购,warn,action,True,0,不成立（浏览中 0 人无加购记录）→ 评估需用严格嵌套口径
+R10,用户画像覆盖率>=90%,warn,action.user_id,False,12919980,实际 65.28%（34.72% 行为无法关联画像）
+R11,商品关联覆盖率>=95%,warn,action.sku_id,True,355402,实际 99.04%
+R12,年龄取值域 {1..6},warn,user.age,True,0,越界 0（age 为年龄段编码，非实际年龄）

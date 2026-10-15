@@ -1,0 +1,42 @@
+{
+  "user": {
+    "rows_raw": 1048575,
+    "rows_clean": 1048575,
+    "sex_placeholder_fixed": 7700
+  },
+  "product": {
+    "rows_raw": 352539,
+    "rows_clean": 352539
+  },
+  "shop": {
+    "rows_raw": 10399,
+    "rows_clean": 10399,
+    "score_placeholder_fixed": 2446,
+    "cate_missing": 2190
+  },
+  "comment": {
+    "rows_raw": 1774233,
+    "rows_clean": 1774233,
+    "integrity_violation": 0,
+    "total_comments": 8537575
+  },
+  "action": {
+    "rows_raw": 37214269,
+    "rows_clean": 37210678,
+    "dup_removed": 3591,
+    "unparsable_time": 0,
+    "unmatched_user": 12921349,
+    "unmatched_sku": 355423,
+    "unmatched_user_rate": 0.347215,
+    "unmatched_sku_rate": 0.009551
+  },
+  "confidence": {
+    "action_type": "official",
+    "sex": "inferred",
+    "age": "official",
+    "user_lv_cd": "unknown",
+    "city_level": "inferred",
+    "province": "unknown",
+    "cate": "unknown"
+  }
+}
